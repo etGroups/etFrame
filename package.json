@@ -1,0 +1,22 @@
+{
+	"name": "api",
+	"version": "0.0.1",
+	"type": "module",
+	"workspaces": [
+		"src"
+	],
+	"scripts": {
+		"dev": "nodemon index.js",
+		"start": "node index.js",
+		"lint": "./node_modules/.bin/eslint .",
+		"lint:fix": "./node_modules/.bin/eslint . --fix"
+	},
+	"devDependencies": {
+		"eslint": "^8.4.1",
+		"eslint-config-airbnb-base": "^15.0.0",
+		"eslint-plugin-import": "^2.25.3"
+	},
+	"dependencies": {
+		"uWebSockets.js": "https://github.com/uNetworking/uWebSockets.js/archive/v20.6.0.tar.gz"
+	}
+}
