@@ -6,6 +6,29 @@
 		"src"
 	],
 	"main": "src/etFrame.js",
+	"module": "src/etFrame.js",
+	"engines": {
+		"node": ">=12.22.1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/etGroups/etFrame.git"
+	},
+	"keywords": [
+		"framework",
+		"node",
+		"fast",
+		"uws",
+		"websocket",
+		"http",
+		"c++"
+	],
+	"author": "etGroups",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/etGroups/etFrame/issues"
+	},
+	"homepage": "https://github.com/etGroups/etFrame#readme",
 	"exports": {
 		"./src/*": "./src/*"
 	},

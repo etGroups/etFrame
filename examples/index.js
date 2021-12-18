@@ -1,3 +1,3 @@
-import etFrame from 'etFrame/src/etFrame';
+import etFrame from 'etFrame';
 
 console.log('etFrame:', etFrame);
