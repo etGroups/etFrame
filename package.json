@@ -1,14 +1,15 @@
 {
 	"name": "etframe",
 	"version": "0.0.1",
+	"description": "micro framework adding routing to uWS",
+	"main": "etFrame.js",
+	"module": "etFrame.js",
+	"exports": {
+		".": "./src/*"
+	},
 	"type": "module",
-	"workspaces": [
-		"src"
-	],
-	"main": "src/etFrame.js",
-	"module": "src/etFrame.js",
 	"engines": {
-		"node": ">=12.22.1"
+		"node": ">=17.2.0"
 	},
 	"repository": {
 		"type": "git",
@@ -29,9 +30,6 @@
 		"url": "https://github.com/etGroups/etFrame/issues"
 	},
 	"homepage": "https://github.com/etGroups/etFrame#readme",
-	"exports": {
-		"./src/*": "./src/*"
-	},
 	"scripts": {
 		"lint": "./node_modules/.bin/eslint .",
 		"lint:fix": "./node_modules/.bin/eslint . --fix"
