@@ -6,6 +6,9 @@
 		"src"
 	],
 	"main": "src/etFrame.js",
+	"exports": {
+		"./src/*": "./src/*"
+	},
 	"scripts": {
 		"lint": "./node_modules/.bin/eslint .",
 		"lint:fix": "./node_modules/.bin/eslint . --fix"
