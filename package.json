@@ -5,7 +5,12 @@
 	"main": "etFrame.js",
 	"module": "etFrame.js",
 	"exports": {
-		".": "./src/*"
+		".": [
+			"./src/config.js",
+			"./src/etFrame.js", 
+			"./src/route.js"
+		],
+		"./helpers/": "./src/helpers/http.js"
 	},
 	"type": "module",
 	"engines": {

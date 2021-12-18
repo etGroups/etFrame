@@ -1,6 +1,9 @@
-import uWS, { App } from 'uWebSockets.js';
+import uWS from 'uWebSockets.js';
+import App from './app.js';
+import Route from './route.js';
+import Config from './config.js';
 
-const etFrame = (options = {}) => {
+const etFrame = (host = 'localhost', port = 80, options = {}) => {
   let app;
 
   if (options.https && options.isSSL !== false) {
@@ -9,7 +12,7 @@ const etFrame = (options = {}) => {
     app = uWS.App();
   }
 
-  const config = new Config(options);
+  const config = new Config(host, port, options);
   const routeInstance = new Route(config);
 
   return new App(config, app, routeInstance);
