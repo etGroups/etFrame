@@ -5,6 +5,10 @@ import Config from './config.js';
 
 console.log('jka');
 
+const test = (mess) => {
+  console.log('mess', mess);
+}
+
 const etFrame = (host = 'localhost', port = 80, options = {}) => {
   let app;
 
@@ -23,4 +27,5 @@ const etFrame = (host = 'localhost', port = 80, options = {}) => {
 
 etFrame.getParts = uWS.getParts;
 
+export {test};
 export default etFrame;
