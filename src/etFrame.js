@@ -3,6 +3,8 @@ import App from './app.js';
 import Route from './route.js';
 import Config from './config.js';
 
+console.log('jka');
+
 const etFrame = (host = 'localhost', port = 80, options = {}) => {
   let app;
 
@@ -11,6 +13,7 @@ const etFrame = (host = 'localhost', port = 80, options = {}) => {
   } else {
     app = uWS.App();
   }
+  console.log('app', app);
 
   const config = new Config(host, port, options);
   const routeInstance = new Route(config);
