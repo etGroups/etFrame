@@ -1,4 +1,6 @@
 .vscode
 node_modules
+examples/basic_sample/node_modules
+examples/basic_sample/package-lock.json
 
 package-lock.json
